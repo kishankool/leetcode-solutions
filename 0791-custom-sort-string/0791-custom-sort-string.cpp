@@ -2,28 +2,35 @@ class Solution {
 public:
     string customSortString(string order, string s) {
         string ans;
+        map<char,int>m;
+        for(int i=0;i<s.size();i++)
+        {
+            m[s[i]]++;
+        }
         for(int i=0;i<order.size();i++)
         {
-            for(int j=0;j<s.size();j++)
+            if(m.find(order[i])!=m.end())
             {
-                if(s[j]==order[i])
+                auto it=m.find(order[i]);
+                while(it->second>0)
                 {
-                    ans.push_back(s[j]);
+                    ans.push_back(order[i]);
+                    it->second--;
                 }
             }
         }
-        multiset<char>m;
-        for(int i=0;i<ans.size();i++)
+        for(auto i:m)
         {
-            m.insert(ans[i]);
-        }
-        for(int i=0;i<s.size();i++)
-        {
-            if(m.find(s[i])==m.end())
+            if(i.second>0)
             {
-                ans.push_back(s[i]);
+                while(i.second>0)
+                {
+                    ans.push_back(i.first);
+                    i.second--;
+                }
             }
         }
         return ans;
+            
     }
 };
