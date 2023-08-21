@@ -51,6 +51,6 @@ Contributions to this repository are welcome! If you have an alternative solutio
 
 ## Contact
 
-If you have any questions, suggestions, or just want to connect, feel free to reach out to me. You can contact me via email at [your.email@example.com](mailto:your.email@example.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/yourusername/).
+If you have any questions, suggestions, or just want to connect, feel free to reach out to me. You can contact me via email at [your.email@example.com](mailto:kishanmishra389@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/kishan-mishra-3007/).
 
 Happy coding and problem solving!
